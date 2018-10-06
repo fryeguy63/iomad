@@ -1289,6 +1289,8 @@ class block_iomad_company_admin_external extends external_api {
                     new external_single_structure(
                         array(
                              'name' => new external_value(PARAM_TEXT, 'License name'),
+                             'type' => new external_value(PARAM_INT, 'License type'),
+                             'program' => new external_value(PARAM_BOOL, 'Program of courses'),
                              'allocation' => new external_value(PARAM_INT, 'Number of license slots'),
                              'validlength' => new external_value(PARAM_INT, 'Course access length (days)'),
                              'startdate' => new external_value(PARAM_INT, 'Date from which the liucense is available (int = timestamp) '),
@@ -1371,6 +1373,8 @@ class block_iomad_company_admin_external extends external_api {
                 array(
                      'id' => new external_value(PARAM_INT, 'license ID'),
                      'name' => new external_value(PARAM_TEXT, 'License name'),
+                     'type' => new external_value(PARAM_INT, 'License type'),
+                     'program' => new external_value(PARAM_BOOL, 'Program of courses'),
                      'allocation' => new external_value(PARAM_INT, 'Number of license slots'),
                      'validlength' => new external_value(PARAM_INT, 'Course access length (days)'),
                      'startdate' => new external_value(PARAM_INT, 'Date from which the liucense is available (int = timestamp) '),
@@ -1404,6 +1408,8 @@ class block_iomad_company_admin_external extends external_api {
                         array(
                              'id' => new external_value(PARAM_INT, 'license ID'),
                              'name' => new external_value(PARAM_TEXT, 'License name'),
+                             'type' => new external_value(PARAM_INT, 'License type'),
+                             'program' => new external_value(PARAM_BOOL, 'Program of courses'),
                              'allocation' => new external_value(PARAM_INT, 'Number of license slots'),
                              'validlength' => new external_value(PARAM_INT, 'Course access length (days)'),
                              'expirydate' => new external_value(PARAM_INT, 'License expiry date'),
